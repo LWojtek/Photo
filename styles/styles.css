@@ -402,6 +402,12 @@ ul {
         -ms-flex-order: 1;
             order: 1;
   }
+  .social img {
+    max-width: 1rem;
+  }
+  #logo {
+    font-size: .5rem;
+  }
 }
 
 @media screen and (max-width: 1068px) {
@@ -411,6 +417,9 @@ ul {
 }
 
 @media screen and (max-width: 768px) {
+  .social img {
+    max-width: 2.5rem;
+  }
   .hero-intro p {
     padding: 1rem;
   }
@@ -431,12 +440,6 @@ ul {
     -webkit-transition: all .5s;
     transition: all .5s;
   }
-  .burger .nav-links a {
-    color: white;
-    font-size: var(--header3);
-    text-decoration: underline;
-    display: inline-block;
-  }
   .nav-links {
     background: var(--background-color);
     position: fixed;
@@ -455,6 +458,12 @@ ul {
     transition: -webkit-transform 1s ease;
     transition: transform 1s ease;
     transition: transform 1s ease, -webkit-transform 1s ease;
+  }
+  .nav-links a {
+    color: white;
+    font-size: var(--header3);
+    text-decoration: underline;
+    display: inline-block;
   }
   .nav-links-active {
     -webkit-transform: translateX(-100%);
@@ -502,6 +511,7 @@ ul {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 20rem;
           flex: 1 1 20rem;
+  font-size: 4rem;
 }
 
 .main-head {
