@@ -1,0 +1,59 @@
+/* ------------------------------------------- */
+/* -------- A b o u t  S e c t i o n -------- */
+
+.about {
+      min-height: 100vh;
+      display: flex;
+      flex-wrap: wrap;
+}
+
+.about-text {
+      flex: 2 1 40rem;
+      justify-content: space-around;
+      background: var(--background-color);
+      color: white;
+      padding: 2rem;
+      text-align: center;
+
+      h2 {
+            font-family: 'Vibes', sans-serif;
+            font-size: var(--header2);
+            letter-spacing: 1rem;
+            padding: 4rem;
+      }
+
+      h3 {
+            font-size: var(--header1);
+            font-family: 'Ruhl Medium', sans-serif;
+            padding: 1rem 0;
+      }
+
+      p {
+            font-size: var(--text)
+      }
+
+      div {
+            padding: 3rem 8rem;
+      }
+}
+
+
+.about-image {
+      flex: 1 1 40rem;
+      position: relative;
+
+      h5 {
+            position: absolute;
+            top: 20%;
+            left: 50%;
+            font-size: var(--text);
+            transform: translate(-50%, -20%);
+            letter-spacing: 2rem;
+      }
+
+      img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+      }
+}

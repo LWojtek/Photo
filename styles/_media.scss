@@ -1,0 +1,121 @@
+/* ------------------------------------------- */
+/* ---------- M e d i a  Q u e r y ---------- */
+
+
+@media screen and (max-width:468px) {
+      .gallery-head {
+            display: none;
+      }
+
+      .contact img {
+            order: 1;
+      }
+}
+
+@media screen and (max-width:1068px) {
+
+
+      .contact img {
+            display: none;
+      }
+}
+
+
+@media screen and (max-width:768px) {
+
+      .hero-intro p {
+            padding: 1rem;
+      }
+
+      .hero-intro h2 {
+            font-size: var(--header3);
+            padding-top: 2rem;
+      }
+
+      /* B U R G E R */
+
+      .burger {
+            position: relative;
+            cursor: pointer;
+
+            span {
+                  padding: .2rem 2rem;
+                  background: var(--gray-text);
+                  margin: .6rem 0rem;
+                  display: block;
+                  transition: all .5s;
+
+            }
+      }
+
+      .burger .nav-links a {
+            color: white;
+            font-size: var(--header3);
+            text-decoration: underline;
+            display: inline-block;
+
+
+      }
+
+      .nav-links {
+            background: var(--background-color);
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 100%;
+            flex-direction: column;
+            align-items: center;
+            transition: transform 1s ease;
+
+      }
+
+      .nav-links-active {
+            transform: translateX(-100%);
+      }
+
+
+      .toggle .line1 {
+            transform: rotateZ(45deg) translateY(350%);
+            transition-delay: .2s;
+            background-color: white;
+
+      }
+
+      .toggle .line2 {
+            opacity: 0;
+      }
+
+      .toggle .line3 {
+            transform: rotateZ(-45deg) translateY(-350%);
+            transition-delay: .2s;
+            background-color: white;
+
+      }
+
+
+
+      /* A b o u t   S e c t i o n */
+
+
+      .about-text div {
+            padding: .5rem;
+      }
+
+
+      /* G a l l e r y */
+
+      .gallery img {
+            grid-row: auto;
+            grid-column: auto;
+            min-height: fit-content;
+      }
+
+      .gallery {
+            grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+
+      }
+
+
+
+}
