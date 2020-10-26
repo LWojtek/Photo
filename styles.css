@@ -124,7 +124,7 @@ nav {
 }
 
 .hero {
-      min-height: 90vh;
+      min-height: 100vh;
       display: flex;
       flex-wrap: wrap;
       overflow: hidden;
