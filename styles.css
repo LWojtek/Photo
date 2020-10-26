@@ -42,6 +42,7 @@ body {
       animation: opening 1s ease-in-out;
 }
 
+
 h1 {
       font-size: var(--header1);
 }
@@ -99,6 +100,9 @@ ul {
       position: relative;
       z-index: 11;
       color: var(--special-color);
+      position: fixed;
+      width: 100%;
+      background-color: white;
 }
 
 
@@ -109,7 +113,7 @@ nav {
       align-items: center;
       min-height: 10vh;
       padding: 2rem 1rem;
-      color:
+
 
 }
 
@@ -132,8 +136,9 @@ nav {
       text-align: center;
 }
 
-.heri-intro h2 {
+.hero-intro h2 {
       padding: 3rem;
+      margin-top: 6rem;
 }
 
 .hero-intro p {
@@ -367,7 +372,8 @@ nav {
       display: block;
       margin: 3rem;
       background: var(--background-color);
-      color: black border: none;
+      color: black;
+      border: none;
       outline: none;
       padding: 1rem;
 }
@@ -409,24 +415,25 @@ footer {
       color: white;
       padding: 3rem 5%;
       align-items: center;
-      flex-wrap: wrap
+      flex-wrap: wrap;
+
 }
 
 footer ul {
       display: flex;
-      flex: 1 1 40rem;
+      flex: 3 1 40rem;
       justify-content: space-between;
       align-items: center;
 }
 
 footer h4 {
-
-      flex: 3 1 40rem;
+      flex: 1 1 40rem;
       font-size: calc(1.4rem + 1vw);
       text-align: center;
       margin-bottom: 1rem;
       font-family: 'Vibes', sans-serif;
-      color: var(--special-color)
+      color: var(--special-color);
+      align-items: flex-end;
 }
 
 footer span {
@@ -474,6 +481,7 @@ footer span {
 
       .burger {
             position: relative;
+            cursor: pointer;
       }
 
       .burger span {
@@ -507,46 +515,32 @@ footer span {
 
       }
 
-      .menu-check {
-            position: absolute;
-            top: 30%;
-            right: 5%;
-            width: 5rem;
-            transform: translate(-10%, -20%);
-            height: 5rem;
-            opacity: 0;
-            cursor: pointer;
-            z-index: 100;
+      .nav-links-active {
+            transform: translateX(-100%);
       }
 
-      .menu-check:checked+.nav-links {
-            transform: translate(-100%);
-      }
 
-      .menu-check:checked~.burger span {
-            background: white;
-
-      }
-
-      .menu-check:checked~.burger span:nth-child(1) {
+      .toggle .line1 {
             transform: rotateZ(45deg) translateY(350%);
             transition-delay: .2s;
+            background-color: white;
 
       }
 
-      .menu-check:checked~.burger span:nth-child(2) {
+      .toggle .line2 {
             opacity: 0;
-
       }
 
-      .menu-check:checked~.burger span:nth-child(3) {
+      .toggle .line3 {
             transform: rotateZ(-45deg) translateY(-350%);
             transition-delay: .2s;
+            background-color: white;
+
       }
 
-      .menu-check:checked~.burger span {
-            transform: rotate(720deg) translateY(30%);
-      }
+
+
+
 
       /* A b o u t   S e c t i o n */
 
