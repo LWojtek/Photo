@@ -260,6 +260,15 @@ footer span {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.gallery img:hover {
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+  -webkit-transition: .5s;
+  transition: .5s;
 }
 
 .gallery1 {
@@ -290,6 +299,7 @@ footer span {
   text-align: center;
   -webkit-transition: .5s;
   transition: .5s;
+  z-index: 10;
 }
 
 .gallery-head:hover {
